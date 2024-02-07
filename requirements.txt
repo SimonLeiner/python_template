@@ -1,0 +1,8 @@
+ipykernel
+numpy
+pandas
+plotly
+yahooquery
+streamlit
+ruff
+pytest
