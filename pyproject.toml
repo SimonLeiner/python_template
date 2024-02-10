@@ -1,3 +1,4 @@
+# Basic Project Description.
 [project]
 name = "Template"
 version = "0.0.1"
@@ -16,12 +17,7 @@ classifiers = [
     "Topic :: Software Development",
 ]
 
-[project.optional-dependencies]
-tests = ["pytest", "pytest-cov", "black", "ruff"]
-
-[project.urls]
-
-# Ruff formatted
+# Ruff formatter.
 [tool.ruff]
 
 # Exclude a variety of commonly ignored directories.
@@ -103,7 +99,7 @@ line-ending = "auto"
 [tool.ruff.lint.pydocstyle]
 convention = "numpy" # Accepts: "google", "numpy", or "pep257".
 
-# setuptools flat file structure
+# Setuptools Flat file structure withour src/
 [tool.setuptools.packages.find]
 where = ["."] # list of folders that contain the packages (["."] by default)
 include = [
