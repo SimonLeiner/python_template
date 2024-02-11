@@ -20,5 +20,3 @@ Multi Curosor, allows you to select and change multiple instances of the same wo
 3. Control + /:
 Comment out lines of code.
 """
-
-
