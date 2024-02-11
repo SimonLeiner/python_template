@@ -10,7 +10,6 @@ With the > symbol, you can run commands. Like fix all auto-fixable problems with
 Find Symbols with the @ symbol
 """
 
-
 """
 2. Control + D:
 Multi Curosor, allows you to select and change multiple instances of the same word.
