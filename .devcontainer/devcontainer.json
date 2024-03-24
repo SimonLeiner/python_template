@@ -18,6 +18,10 @@
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
+			// Known Bug
+			"settings": {
+				"extensions.verifySignature": false
+			},
 			"extensions": [
 				// Python.
 				"ms-python.python",
