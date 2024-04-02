@@ -7,7 +7,7 @@
 		// Sets the run context to one level up instead of the .devcontainer folder.
 		"context": "..",
 		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
-		"dockerfile": "../Dockerfile"
+		"dockerfile": "../dockerfile"
 	},
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -23,25 +23,26 @@
 				"extensions.verifySignature": false
 			},
 			"extensions": [
-				// Python.
+				// python
 				"ms-python.python",
-				// Jupyter Notebooks.
 				"ms-toolsai.jupyter-keymap",
 				"ms-toolsai.jupyter",
-				// Github.
+				// Copilot
 				"GitHub.copilot",
 				"GitHub.copilot-chat",
 				"github.vscode-github-actions",
 				"GitHub.vscode-pull-request-github",
-				// Formatting.
+				// Formatting
 				"charliermarsh.ruff",
-				// File Helping for CSV, TOML, YAML.
+				"wayou.vscode-todo-highlight",
+				// File Support
 				"tamasfe.even-better-toml",
 				"mechatroner.rainbow-csv",
 				"redhat.vscode-yaml",
-				// VSCODE Appearance.
+				// Pycharm Theme
 				"garytyler.darcula-pycharm",
-				"wayou.vscode-todo-highlight"
+				// Docker
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	}
