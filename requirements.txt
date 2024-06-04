@@ -1,6 +1,11 @@
 ipykernel
+nbconvert
+
 numpy
 pandas
+matplotlib
 plotly
+
 pytest
+
 pre-commit
