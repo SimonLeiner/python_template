@@ -30,8 +30,6 @@
 				// Copilot
 				"GitHub.copilot",
 				"GitHub.copilot-chat",
-				"github.vscode-github-actions",
-				"GitHub.vscode-pull-request-github",
 				// Formatting
 				"charliermarsh.ruff",
 				"wayou.vscode-todo-highlight",
