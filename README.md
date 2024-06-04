@@ -1,4 +1,4 @@
-# Template
+# Python Template
 General template for python projects.
 
 ## Description
