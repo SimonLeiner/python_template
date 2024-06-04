@@ -13,6 +13,8 @@ RUN apt-get update && apt-get install --no-install-recommends  -y \
     curl \
     # for interacting with remote servers
     openssh-client\
+    # for psutil
+    gcc python3-dev\
     # clean up
     && apt-get clean\
     && rm -rf /var/lib/apt/lists/*
