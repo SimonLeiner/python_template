@@ -7,3 +7,5 @@ This is a general template for python projects. It includes a basic structure fo
 ## Testing
 ![Tests](https://github.com/sl2000stat/Template/actions/workflows/tests.yml/badge.svg)
 
+## Formatting
+![Formatting](https://github.com/sl2000stat/Template/actions/workflows/ruff.yml/badge.svg)
