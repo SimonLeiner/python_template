@@ -97,7 +97,7 @@ skip-magic-trailing-comma = false
 line-ending = "auto"
 
 [tool.ruff.lint.pydocstyle]
-convention = "numpy" # Accepts: "google", "numpy", or "pep257".
+convention = "google" # Accepts: "google", "numpy", or "pep257".
 
 # Setuptools Flat file structure withour src/
 [tool.setuptools.packages.find]

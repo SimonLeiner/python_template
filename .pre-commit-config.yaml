@@ -40,7 +40,7 @@ repos:
         types: [python]
 
   # Check Commit Message for Style
-   - repo: https://github.com/jorisroovers/gitlint
+  - repo: https://github.com/jorisroovers/gitlint
     rev: v0.19.1
     hooks:
       - id: gitlint
