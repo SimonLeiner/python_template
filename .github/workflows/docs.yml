@@ -14,27 +14,38 @@ permissions:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  deploy:
+  deploy-docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-      - uses: actions/setup-python@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: 3.11
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
-      - uses: actions/cache@v4
+
+      - name: Cache dependencies
+        uses: actions/cache@v4
         with:
-          key: mkdocs-material-${{ env.cache_id }}
           path: .cache
+          key: mkdocs-material-${{ github.sha }}
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material
-      - run: pip install mkdocstrings
-      - run: mkdocs gh-deploy --force
+
+      - name: Install MkDocs Material theme
+        run: pip install mkdocs-material
+
+      - name: Install MkDocStrings
+        run: pip install mkdocstrings
+
+      - name: Deploy documentation to GitHub Pages
+        run: mkdocs gh-deploy --force
 
 
 
