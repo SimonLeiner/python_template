@@ -1,11 +1,14 @@
+# jupyter
 ipykernel
 nbconvert
 
+#standard
 numpy
 pandas
 matplotlib
-plotly
 
+# testing
 pytest
 
+# linting
 pre-commit

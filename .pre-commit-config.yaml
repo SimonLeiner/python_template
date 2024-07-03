@@ -1,5 +1,4 @@
 repos:
-
   # General Checks
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
@@ -23,6 +22,16 @@ repos:
       - id: check-xml
       - id: check-yaml
 
+  # Black
+  - repo: https://github.com/psf/black
+    rev: 24.4.2
+    hooks:
+      - id: black
+        types_or: [python, pyi]
+        entry: "black"
+        args: ["--config", "pyproject.toml"]
+        exclude: "docs/_pygments/monokai.py"
+
   # Ruff
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.4.7
@@ -30,6 +39,22 @@ repos:
       - id: ruff
         types_or: [python, pyi, jupyter]
         args: ["--fix"]
+
+  # Format Docstring Quotes
+  - repo: https://github.com/PyCQA/docformatter
+    rev: v1.7.5
+    hooks:
+      - id: docformatter
+        additional_dependencies: [tomli]
+        args:
+          [
+            "--black",
+            "--make-summary-multi-line",
+            "--pre-summary-newline",
+            "--blank",
+            "--recursive",
+            "--in-place",
+          ]
 
   # Check for trailing commas
   - repo: https://github.com/asottile/add-trailing-comma
@@ -54,6 +79,22 @@ repos:
         description: Checks for common misspellings.
         types_or: [python, cython, rst, markdown]
         args: ["-L", "crate,ot,socio-economic,zar"]
+
+  # Static Type Checking for Python
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.10.1
+    hooks:
+      - id: mypy
+        args: ["--config", "pyproject.toml", "--allow-incomplete-defs"]
+        additional_dependencies:
+          [
+            msgspec,
+            types-frozendict,
+            types-pytz,
+            types-redis,
+            types-requests,
+            types-toml,
+          ]
 
   # Strip out output from Jupyter Notebooks
   - repo: https://github.com/kynan/nbstripout

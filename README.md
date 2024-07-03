@@ -8,12 +8,12 @@ This is a general template for python projects. It includes a basic structure fo
 
 ## Testing
 
-![Tests](https://github.com/SimonLeiner/Template/actions/workflows/tests.yml/badge.svg)
+![Tests](https://github.com/SimonLeiner/python_template/actions/workflows/tests.yml/badge.svg)
 
 ## Formatting
 
-![Formatting](https://github.com/SimonLeiner/Template/actions/workflows/ruff.yml/badge.svg)
+![Formatting](https://github.com/SimonLeiner/python_template/actions/workflows/ruff.yml/badge.svg)
 
-## Documentation
+## Docs
 
-![Formatting](https://github.com/SimonLeiner/Template/actions/workflows/docs.yml/badge.svg)
+![Docs](https://github.com/SimonLeiner/python_template/actions/workflows/docs.yml/badge.svg)

@@ -14,10 +14,10 @@ jobs:
     name: Test wheels on ${{ matrix.os }} with ${{ matrix.python-version }}
     runs-on: ${{ matrix.os }}
     strategy:
-      fail-fast: false  # to not fail all combinations if just one fail
+      fail-fast: false # to not fail all combinations if just one fail
       matrix:
         os: [macos-latest]
-        python-version: ['3.11']
+        python-version: ["3.11"]
 
     steps:
       - uses: actions/checkout@v3
@@ -26,7 +26,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
-          cache: 'pip'
+          cache: "pip"
 
       - name: Upgrade pip
         run: python -m pip install --upgrade pip
