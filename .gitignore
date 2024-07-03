@@ -1,7 +1,69 @@
-# Byte-compiled / optimized / DLL files
+*.c
+*.o
+*.so
+*.exp
+*.obj
+*.lib
+*.xml
+
+# Logs and patches
+*.log
+*.patch
+log/
+logs/
+
+# Profiler and database
+*.prof
+*.rdb
+*.sqlite
+
+# Secrets and environment files
+*.key
+*.key_secret
+*.env
+
+# Compressed files
+*.tar.gz*
+*.zip
+
+# IntelliJ and VSCode project
+*.iml
+.idea/
+.vscode/
+
+# Benchmarking and coverage
+.benchmarks*
+.coverage*
+
+# Rust related
+*target/
+
+# Python related
+*.pyc
+*.pyd
+.history*
+.cache/
+.mypy_cache/
+.profile/
+.pytest_cache/
+.ruff_cache/
+*dask-worker-space*
+venv*/
 __pycache__/
-*.py[cod]
-*$py.class
+
+# Build environment and temp
+_build/
+build/
+dist/
+env/
+*temp/
+
+# System and editor specific
+.cursorignore
+.DS_Store
+.null-ls*
+PERF.JSON
+output.json
 
 # C extensions
 *.so
@@ -120,10 +182,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
-env/
-venv/
 ENV/
 env.bak/
 venv.bak/
@@ -159,6 +218,3 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
-# streamlit
-.streamlit/
-.DS_Store
