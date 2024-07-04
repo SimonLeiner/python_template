@@ -1,8 +1,6 @@
 # Python Template
 
-
-[![codecov](https://codecov.io/gh/nautechsystems/nautilus_trader/branch/master/graph/badge.svg?token=DXO9QQI40H)](https://codecov.io/gh/nautechsystems/nautilus_trader)
-
+[![codecov](https://codecov.io/gh/SimonLeiner/python_template/graph/badge.svg?token=FYBFTW7BKB)](https://codecov.io/gh/SimonLeiner/python_template)
 ![Formatting](https://github.com/SimonLeiner/python_template/actions/workflows/ruff.yml/badge.svg)
 ![Docs](https://github.com/SimonLeiner/python_template/actions/workflows/build-docs.yml/badge.svg)
 
