@@ -1,15 +1,14 @@
 # Basic Project Description.
 [project]
-name = "Template"
+name = "python_template"
 version = "0.0.1"
 maintainers = [{ name = "Simon Leiner", email = "simon.leiner1@gmail.com" }]
 authors = [{ name = "Simon Leiner", email = "simon.leiner1@gmail.com" }]
-description = "Template"
+description = "Template for Python"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []
 keywords = ["Coding", "Python", "Template", "Project"]
-license = { file = "LICENSE" }
 classifiers = [
     "Intended Audience :: Family",
     "Operating System :: MacOS",
