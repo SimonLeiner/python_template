@@ -32,6 +32,7 @@ jobs:
       - name: Upload coverage report
         uses: codecov/codecov-action@v3
         with:
+          # Note: Set the CODECOV_TOKEN secret in the repository settings
           token: ${{ secrets.CODECOV_TOKEN }}
           files: ./coverage.xml
           verbose: true
