@@ -2,5 +2,6 @@
 
 from pathlib import Path
 
+
 TESTS_PACKAGE_ROOT = Path(__file__).parent.resolve()
 TEST_DATA_DIR = TESTS_PACKAGE_ROOT / "test_data"

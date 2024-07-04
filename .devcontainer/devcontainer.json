@@ -23,24 +23,19 @@
 				"extensions.verifySignature": false
 			},
 			"extensions": [
-				// python
 				"ms-python.python",
 				"ms-toolsai.jupyter-keymap",
 				"ms-toolsai.jupyter",
-				// Copilot
 				"GitHub.copilot",
 				"GitHub.copilot-chat",
-				// Formatting
 				"charliermarsh.ruff",
 				"wayou.vscode-todo-highlight",
-				// File Support
 				"tamasfe.even-better-toml",
 				"mechatroner.rainbow-csv",
 				"redhat.vscode-yaml",
-				// Pycharm Theme
 				"garytyler.darcula-pycharm",
-				// Docker
-				"ms-azuretools.vscode-docker"
+				"ms-azuretools.vscode-docker",
+				"eamodio.gitlens"
 			]
 		}
 	}

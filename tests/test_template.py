@@ -1,5 +1,4 @@
-# TODO: Write tests for the template module
-# """Test the template module."""
+"""Test the template module."""
 
 
 def test_template() -> None:

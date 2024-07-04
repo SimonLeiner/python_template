@@ -77,6 +77,7 @@ ignore = [
     "D415",   # First line should end with a period, question mark, or exclamation point (not always a first line)
     "D416",   # Section name should end with a colon ('Warnings:', not 'Warnings') (incorrect?)
     "E741",   # Ambiguous variable name (single char)
+    "E501",   # Line too long (82 > 79 characters)
     "PD901",  # `df` is a bad variable name. Be kinder to your future self
     "RUF012", # Mutable class attributes should be annotated with `typing.ClassVar`
     "S101",   # Use of assert detected (OK in test suite)
@@ -86,6 +87,8 @@ ignore = [
     "S603",   # `subprocess` call: check for execution of untrusted input **fix**
     "ANN101", # Missing type annotation for self in method
     "G004",   # Logging statement uses string formatting
+    "TD003",  # Missing link to issue
+    "FIX002", # Line contains TODO, consider resolving the issue
 ]
 # Allow fix for all enabled rules (when `--fix`) is provided.
 fixable = ["ALL"]
