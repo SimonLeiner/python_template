@@ -19,3 +19,10 @@ Multi Curosor, allows you to select and change multiple instances of the same wo
 3. Control + /:
 Comment out lines of code.
 """
+
+"""GIT Commands.
+
+1. git pull origin branch_name
+Pull the latest changes from the remote repository into your local repository.
+
+"""
