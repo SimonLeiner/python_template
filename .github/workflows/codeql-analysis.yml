@@ -1,8 +1,8 @@
 name: codeql-analysis
 
 on:
-  pull_request:
-    branches: [master]
+  push:
+    branches: [main]
   schedule:
     - cron: "42 13 * * 4"
 
