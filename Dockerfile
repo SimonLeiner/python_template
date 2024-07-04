@@ -25,7 +25,7 @@ RUN pip install -U -r requirements.txt
 
 # setting up pre commit hooks
 COPY .pre-commit-config.yaml .
-RUN git init . && pre-commit install-hooks
+RUN git init . && pre-commit install
 
 # set working directory
 WORKDIR /workspace
