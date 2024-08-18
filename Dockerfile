@@ -2,8 +2,8 @@
 # arm64
 # linux/amd64
 
-# install python 3.11 for platform linux/amd64
-FROM python:3.11-slim
+# install python 3.12 for platform linux/amd64
+FROM python:3.12-slim
 
 # install git 
 RUN apt-get update && apt-get install --no-install-recommends  -y \
